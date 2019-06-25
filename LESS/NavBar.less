@@ -1,34 +1,83 @@
 .container {
     .landing {
-        background-image: url(../assets/landing.jpeg);
+        background: url(../assets/landing.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 42rem;
+        min-height: 71rem;
+        width: 100%;
+        opacity: 0.8;
 
-        h1 {
-            margin: 0;
+        .header-display {
+            top: 32%;
+            left: 40%;
+            display: block;
+            position: absolute;
+            text-align: center;
+
+            @media @mobile {
+                left: 28%;
+            }
+            
+            @media @tablet {
+                left: 33%;
+            }
+
+            img {
+                justify-content: center;
+                border-radius: 8px;
+                margin-bottom: 35px;
+            }
+
+            h1 {
+                margin: 0;
+                color: white;
+                font-size: 2rem;
+            }
         }
+
     }
 
     .nav {
-
         background-color: #9858DB;
-        padding: 20px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 60px;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        transition: .5s;
         
-        .logo {
-            width: 5%;
-        }
+        // .logo {
+        // }
 
-        a {
-            text-decoration: none;
-            color: white;
-        }
+        ul {
+            float: right;
+            margin: 0;
+            padding: 0;
+            display: flex;
 
+            li {
+                list-style: none;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 5px 20px;
+                transition: .5s;
+                font-size: 1.3rem;
+            }
+        }
     }
 
     .sticky {
         position: fixed;
         top: 0;
+        bottom: auto;
         width: 100%;
     }
 
@@ -39,10 +88,7 @@
     }
 
     .features {
-
         background-color: #9858DB;
 
-        .feature {
-        }
     }
 }
