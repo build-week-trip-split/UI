@@ -1,15 +1,33 @@
-.nav {
+.container .landing {
+  background-image: url(../assets/landing.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 42rem;
+}
+.container .landing h1 {
+  margin: 0;
+}
+.container .nav {
   background-color: #9858DB;
   padding: 20px;
 }
-.nav a {
+.container .nav .logo {
+  width: 5%;
+}
+.container .nav a {
   text-decoration: none;
   color: white;
 }
-.sticky {
+.container .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+}
+.container .what .who {
+  width: 50%;
+}
+.container .features {
+  background-color: #9858DB;
 }
 html,
 body {
