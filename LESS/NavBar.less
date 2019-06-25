@@ -1,48 +1,90 @@
 .container {
-    .landing {
-        background-image: url(../assets/landing.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 42rem;
+  max-width: 850px;
+  width: @full-width;
+  margin: auto;
+  .landing {
+    background-image: url(../assets/landing.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 42rem;
 
-        h1 {
-            margin: 0;
-        }
+    h1 {
+      margin: 0;
+    }
+  }
+
+  .nav {
+    max-width: 850px;
+    width: @full-width;
+    margin: auto;
+    background-color: #9858db;
+    padding: 20px;
+
+    .logo {
+      width: 10px;
     }
 
-    .nav {
-
-        background-color: #9858DB;
-        padding: 20px;
-        
-        .logo {
-            width: 5%;
-        }
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
+    a {
+      text-decoration: none;
+      color: white;
     }
+  }
 
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
+  .sticky {
+    position: fixed;
+    top: 0;
+    max-width: 850px;
+    width: @full-width;
+    margin: auto;
+  }
+
+  .who {
+    width: @full-width;
+  }
+
+  .features {
+    background-color: #9858db;
+  }
+}
+
+@media @phone {
+  .container {
+    max-width: 450px;
+    width: @phone;
+    margin: auto;
+  }
+
+  .nav {
+    max-width: 450px;
+    width: @phone;
+    margin: auto;
+    background-color: #9858db;
+    padding: 20px;
+
+    a {
+      text-decoration: none;
+      color: white;
     }
+  }
+  .logo {
+    max-width: 450px;
 
-    .what {
-        .who {
-            width: 50%;
-        }
+    margin: auto;
+  }
+  .who {
+    max-width: 450px;
+    width: @phone;
+    margin: auto;
+  }
+  .landing {
+    background-image: url(../assets/landing.jpeg);
+    background-size: 430px;
+    background-repeat: no-repeat;
+
+    margin: auto;
+
+    h1 {
+      margin: auto;
     }
-
-    .features {
-
-        background-color: #9858DB;
-
-        .feature {
-        }
-    }
+  }
 }
