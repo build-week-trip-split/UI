@@ -1,3 +1,48 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #110303;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 850px;
+  width: 850px;
+  margin: auto;
+}
+.section-container {
+  max-width: 850px;
+  width: 850px;
+  margin: auto;
+}
+@media (max-width:500px) {
+  max-width: 450px;
+  width: (max-width:500px);
+  margin: auto;
+}
+.container {
+  max-width: 850px;
+  width: 850px;
+  margin: auto;
+}
 .container .landing {
   background-image: url(../assets/landing.jpeg);
   background-size: cover;
@@ -8,11 +53,14 @@
   margin: 0;
 }
 .container .nav {
-  background-color: #9858DB;
+  max-width: 850px;
+  width: 850px;
+  margin: auto;
+  background-color: #9858db;
   padding: 20px;
 }
 .container .nav .logo {
-  width: 5%;
+  width: 10px;
 }
 .container .nav a {
   text-decoration: none;
@@ -21,13 +69,51 @@
 .container .sticky {
   position: fixed;
   top: 0;
-  width: 100%;
+  max-width: 850px;
+  width: 850px;
+  margin: auto;
 }
-.container .what .who {
-  width: 50%;
+.container .who {
+  width: 850px;
 }
 .container .features {
-  background-color: #9858DB;
+  background-color: #9858db;
+}
+@media (max-width:500px) {
+  .container {
+    max-width: 450px;
+    width: (max-width:500px);
+    margin: auto;
+  }
+  .nav {
+    max-width: 450px;
+    width: (max-width:500px);
+    margin: auto;
+    background-color: #9858db;
+    padding: 20px;
+  }
+  .nav a {
+    text-decoration: none;
+    color: white;
+  }
+  .logo {
+    max-width: 450px;
+    margin: auto;
+  }
+  .who {
+    max-width: 450px;
+    width: (max-width:500px);
+    margin: auto;
+  }
+  .landing {
+    background-image: url(../assets/landing.jpeg);
+    background-size: 430px;
+    background-repeat: no-repeat;
+    margin: auto;
+  }
+  .landing h1 {
+    margin: auto;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
@@ -160,20 +246,138 @@ table {
 .footer {
   background-color: #9858db;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 8px;
 }
-.footer .footer_logos {
-  align-items: center;
+.container {
+  width: 100%;
+  padding: 8px;
+  margin: auto;
+}
+.section-container {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
 }
 .missionStatement {
-  padding: 10px;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 .missionStatement h1 {
-  padding: 10px 0;
+  font-size: 2.5rem;
+  margin-bottom: 2%;
 }
 .missionStatement p {
-  padding: 10px 0;
+  font-size: 1.2rem;
+}
+.features {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.features h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.features p {
+  font-size: 1.2rem;
+}
+.whatItDoes {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.whatItDoes h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.whatItDoes p {
+  font-size: 1.2rem;
+}
+.custReview h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.cr {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.imgg {
+  margin-right: 5%;
+}
+.imgg img {
+  border-radius: 70px;
+}
+.imgg p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.cr .review {
+  display: flex;
+}
+.review {
+  margin: 50px 0 50px 0;
+  font-size: 1.2rem;
+}
+@media (max-width:500px) {
+  .container {
+    max-width: 450px;
+    width: (max-width:500px);
+    margin: auto;
+  }
+  .missionStatement {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .missionStatement h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+  }
+  .missionStatement p {
+    font-size: 1.2rem;
+  }
+  .custReview h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .section-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 5px;
+    margin: auto;
+  }
+  .cr {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .imgg {
+    align-content: center;
+    margin: auto;
+  }
+  .imgg img {
+    border-radius: 70px;
+  }
+  .imgg p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .cr .review {
+    display: flex;
+  }
+  .review {
+    margin: 10px 0 30px 0;
+    text-align: center;
+  }
+  .review p {
+    font-size: 1.2rem;
+  }
+  .custReview {
+    border-top: 1px grey solid;
+    padding-top: 10px;
+    border-bottom: 1px grey solid;
+    background-color: #2bf7b3;
+  }
 }
 @font-face {
   font-family: 'PT Sans';
