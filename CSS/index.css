@@ -1,9 +1,43 @@
-.width-100 {
-  width: 100%;
+* {
+  box-sizing: border-box;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #110303;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.section-container {
+  max-width: 850px;
+  width: 850px;
+  margin: auto;
+}
+@media (max-width:500px) {
+  .section-container {
+    max-width: 450px;
+    width: (max-width:500px);
+    margin: auto;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
 */
 html,
 body,
@@ -129,48 +163,12 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-html,
-body {
-  font-family: "Ubuntu", sans-serif;
-  color: #110303;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Russo One", sans-serif;
-}
-h1 {
-  font-size: 2rem;
-}
-p {
-  font-size: 1.6rem;
-  line-height: 1.4;
-}
-.section-container {
-  max-width: 850px;
-  width: 850px;
-  margin: auto;
-}
-@media (max-width:500px) {
-  .section-container {
-    max-width: 450px;
-    width: (max-width:500px);
-    margin: auto;
-  }
-}
 .footer {
   margin-top: 20px;
   background-color: purple;
+  background-color: #9858db;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 8px;
   margin-bottom: 10px;
 }
@@ -181,6 +179,9 @@ p {
 .missionStatement h1 {
   font-size: 2.5rem;
   margin-bottom: 2%;
+}
+.missionStatement p {
+  font-size: 1.2rem;
 }
 .custReview h1 {
   font-size: 2.5rem;
@@ -204,12 +205,14 @@ p {
 }
 .imgg p {
   text-align: center;
+  font-size: 1.3rem;
 }
 .cr .review {
   display: flex;
 }
 .review {
   margin: 50px 0 50px 0;
+  font-size: 1.2rem;
 }
 @media (max-width:500px) {
   .missionStatement {
@@ -248,6 +251,7 @@ p {
   }
   .imgg p {
     text-align: center;
+    font-size: 1.5rem;
   }
   .cr .review {
     display: flex;
@@ -256,10 +260,37 @@ p {
     margin: 10px 0 30px 0;
     text-align: center;
   }
+  .review p {
+    font-size: 1.2rem;
+  }
   .custReview {
     border-top: 1px grey solid;
     padding-top: 10px;
     border-bottom: 1px grey solid;
     background-color: #2bf7b3;
   }
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
 }
