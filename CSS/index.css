@@ -1,9 +1,37 @@
-.width-100 {
+.container .landing {
+  background-image: url(../assets/landing.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 42rem;
+}
+.container .landing h1 {
+  margin: 0;
+}
+.container .nav {
+  background-color: #9858DB;
+  padding: 20px;
+}
+.container .nav .logo {
+  width: 5%;
+}
+.container .nav a {
+  text-decoration: none;
+  color: white;
+}
+.container .sticky {
+  position: fixed;
+  top: 0;
   width: 100%;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+.container .what .who {
+  width: 50%;
+}
+.container .features {
+  background-color: #9858DB;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
 */
 html,
 body,
@@ -122,55 +150,15 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-html,
-body {
-  font-family: "Ubuntu", sans-serif;
-  color: #5e6164;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Russo One", sans-serif;
-  color: #23293b;
-}
-h1 {
-  font-size: 3.2rem;
-}
-h3 {
-  font-size: 2.8rem;
-}
-p {
-  font-size: 1.6rem;
-  line-height: 1.4;
-}
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-@media (max-width:500px) {
-  .container {
-    width: 80%;
-    margin: 0;
-  }
-}
 .footer {
-  background-color: purple;
+  background-color: #9858db;
   text-align: center;
   font-size: 1.5rem;
   padding: 8px;
@@ -210,4 +198,12 @@ p {
   font-style: normal;
   font-weight: 700;
   src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
