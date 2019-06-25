@@ -1,18 +1,149 @@
-.nav {
+.container {
+    // max-width: 850px;
+    // width: @full-width;
+    // margin: auto;
 
-    background-color: #9858DB;
-    padding: 20px;
-    
+    .landing {
+        background: url(../assets/landing.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 71rem;
+        width: 100%;
+        opacity: 0.8;
 
-    a {
-        text-decoration: none;
-        color: white;
+        .header-display {
+            top: 32%;
+            left: 40%;
+            display: block;
+            position: absolute;
+            text-align: center;
+
+            @media @mobile {
+                left: 28%;
+            }
+            
+            @media @tablet {
+                left: 33%;
+            }
+
+            img {
+                justify-content: center;
+                border-radius: 8px;
+                margin-bottom: 35px;
+            }
+
+            h1 {
+                margin: 0;
+                color: white;
+                font-size: 2rem;
+            }
+        }
+
     }
 
+    .nav {
+        background-color: #9858DB;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 60px;
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        transition: .5s;
+
+        ul {
+            float: right;
+            margin: 0;
+            padding: 0;
+            display: flex;
+
+            li {
+                list-style: none;
+            }
+
+            a {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 5px 20px;
+                transition: .5s;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        bottom: auto;
+        width: 100%;
+    }
+//   }
+
+//   .sticky {
+//     position: fixed;
+//     top: 0;
+//     max-width: 850px;
+//     width: @full-width;
+//     margin: auto;
+//   }
+
+  .who {
+    width: @full-width;
+  }
+
+  .features {
+    background-color: #9858db;
+  }
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+@media @phone {
+//   .container {
+//     max-width: 450px;
+//     width: @phone;
+//     margin: auto;
+//   }
+
+  .nav {
+    // max-width: 450px;
+    // width: @phone;
+    // margin: auto;
+    // background-color: #9858db;
+    // padding: 20px;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  .logo {
+    max-width: 450px;
+
+// <<<<<<< HEAD
+//     .features {
+//         background-color: #9858DB;
+
+// =======
+//     margin: auto;
+//   }
+//   .who {
+//     max-width: 450px;
+//     width: @phone;
+//     margin: auto;
+//   }
+//   .landing {
+//     background-image: url(../assets/landing.jpeg);
+//     background-size: 430px;
+//     background-repeat: no-repeat;
+
+//     margin: auto;
+
+//     h1 {
+//       margin: auto;
+// >>>>>>> ef62d6ca19e8063ee5ea887a7bbee7239b586a37
+    }
 }
+// }

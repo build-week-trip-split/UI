@@ -1,15 +1,123 @@
-.nav {
-  background-color: #9858DB;
-  padding: 20px;
+* {
+  box-sizing: border-box;
 }
-.nav a {
-  text-decoration: none;
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: #110303;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.section-container {
+  max-width: 850px;
+  width: 850px;
+  margin: auto;
+}
+@media (max-width:500px) {
+  max-width: 450px;
+  width: (max-width:500px);
+  margin: auto;
+}
+.container .landing {
+  background: url(../assets/landing.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 71rem;
+  width: 100%;
+  opacity: 0.8;
+}
+.container .landing .header-display {
+  top: 32%;
+  left: 40%;
+  display: block;
+  position: absolute;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  .container .landing .header-display {
+    left: 28%;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .container .landing .header-display {
+    left: 33%;
+  }
+}
+.container .landing .header-display img {
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 35px;
+}
+.container .landing .header-display h1 {
+  margin: 0;
   color: white;
+  font-size: 2rem;
 }
-.sticky {
+.container .nav {
+  background-color: #9858DB;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 60px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s;
+}
+.container .nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.container .nav ul li {
+  list-style: none;
+}
+.container .nav ul a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  transition: 0.5s;
+  font-size: 1.3rem;
+}
+.container .sticky {
   position: fixed;
   top: 0;
+  bottom: auto;
   width: 100%;
+}
+.container .who {
+  width: 850px;
+}
+.container .features {
+  background-color: #9858db;
+}
+@media (max-width:500px) {
+  .nav a {
+    text-decoration: none;
+    color: white;
+  }
+  .logo {
+    max-width: 450px;
+  }
 }
 body {
   margin: auto;
@@ -36,7 +144,7 @@ body {
   border-radius: 50px;
   padding: 1rem 0rem;
 }
-.meet-the-team {
+.about-us .meet-the-team {
   margin-top: 7rem;
 }
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -167,6 +275,195 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+.footer {
+  background-color: #9858db;
+  text-align: center;
+  font-size: 1rem;
+  padding: 8px;
+}
+.section-container {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+}
+.missionStatement {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.missionStatement h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.missionStatement p {
+  font-size: 1.2rem;
+}
+.features {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.features h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.features p {
+  font-size: 1.2rem;
+}
+.whatItDoes {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.whatItDoes h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.whatItDoes p {
+  font-size: 1.2rem;
+}
+.custReview h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.cr {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.imgg {
+  margin-right: 5%;
+}
+.imgg img {
+  border-radius: 70px;
+}
+.imgg p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.cr .review {
+  display: flex;
+}
+.review {
+  margin: 50px 0 50px 0;
+  font-size: 1.2rem;
+}
+@media (max-width:500px) {
+  .missionStatement {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .missionStatement h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+  }
+  .missionStatement p {
+    font-size: 1.2rem;
+  }
+  .missionStatement h1 {
+    text-align: center;
+  }
+  .features {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .features h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+  }
+  .features p {
+    font-size: 1.2rem;
+  }
+  .features h1 {
+    text-align: center;
+  }
+  .whatItDoes {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .whatItDoes h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+  }
+  .whatItDoes p {
+    font-size: 1.2rem;
+  }
+  .whatItDoes h1 {
+    text-align: center;
+  }
+  .custReview h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .section-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 5px;
+    margin: auto;
+  }
+  .cr {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .imgg {
+    align-content: center;
+    margin: auto;
+  }
+  .imgg img {
+    border-radius: 70px;
+  }
+  .imgg p {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .cr .review {
+    display: flex;
+  }
+  .review {
+    margin: 10px 0 30px 0;
+    text-align: center;
+  }
+  .review p {
+    font-size: 1.2rem;
+  }
+  .custReview {
+    border-top: 1px grey solid;
+    padding-top: 10px;
+    border-bottom: 1px grey solid;
+    background-color: #2bf7b3;
+  }
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 html {
   font-size: 62.5%;
 }
@@ -174,4 +471,6 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
+  font-family: 'Quicksand', sans-serif;
 }
