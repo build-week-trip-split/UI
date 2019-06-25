@@ -1,4 +1,8 @@
 .container {
+    // max-width: 850px;
+    // width: @full-width;
+    // margin: auto;
+
     .landing {
         background: url(../assets/landing.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -49,9 +53,6 @@
         bottom: 0;
         left: 0;
         transition: .5s;
-        
-        // .logo {
-        // }
 
         ul {
             float: right;
@@ -80,15 +81,69 @@
         bottom: auto;
         width: 100%;
     }
+//   }
 
-    .what {
-        .who {
-            width: 50%;
-        }
+//   .sticky {
+//     position: fixed;
+//     top: 0;
+//     max-width: 850px;
+//     width: @full-width;
+//     margin: auto;
+//   }
+
+  .who {
+    width: @full-width;
+  }
+
+  .features {
+    background-color: #9858db;
+  }
+}
+
+@media @phone {
+//   .container {
+//     max-width: 450px;
+//     width: @phone;
+//     margin: auto;
+//   }
+
+  .nav {
+    // max-width: 450px;
+    // width: @phone;
+    // margin: auto;
+    // background-color: #9858db;
+    // padding: 20px;
+
+    a {
+      text-decoration: none;
+      color: white;
     }
+  }
+  .logo {
+    max-width: 450px;
 
-    .features {
-        background-color: #9858DB;
+// <<<<<<< HEAD
+//     .features {
+//         background-color: #9858DB;
 
+// =======
+//     margin: auto;
+//   }
+//   .who {
+//     max-width: 450px;
+//     width: @phone;
+//     margin: auto;
+//   }
+//   .landing {
+//     background-image: url(../assets/landing.jpeg);
+//     background-size: 430px;
+//     background-repeat: no-repeat;
+
+//     margin: auto;
+
+//     h1 {
+//       margin: auto;
+// >>>>>>> ef62d6ca19e8063ee5ea887a7bbee7239b586a37
     }
 }
+// }
