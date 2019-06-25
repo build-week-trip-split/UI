@@ -1,10 +1,100 @@
 .missionStatement {
-  padding: 10px;
-  h1 {
-    padding: 10px 0;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.missionStatement h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+
+.custReview {
+}
+.custReview h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
+}
+.section-container {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+}
+.cr {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.imgg {
+  margin-right: 5%;
+}
+
+.imgg img {
+  border-radius: 70px;
+}
+.imgg p {
+  text-align: center;
+}
+.cr .review {
+  display: flex;
+}
+.review {
+  margin: 50px 0 50px 0;
+}
+
+@media @phone {
+  .missionStatement {
+    margin-top: 4%;
   }
 
-  p {
-    padding: 10px 0;
+  .missionStatement h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+
+  .missionStatement p {
+    text-align: center;
+  }
+  .custReview h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .section-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 5px;
+    margin: auto;
+  }
+  .cr {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+
+  .imgg {
+    align-content: center;
+    margin: auto;
+  }
+
+  .imgg img {
+    border-radius: 70px;
+  }
+  .imgg p {
+    text-align: center;
+  }
+  .cr .review {
+    display: flex;
+  }
+  .review {
+    margin: 10px 0 30px 0;
+    text-align: center;
+  }
+  .custReview {
+    border-top: 1px grey solid;
+    padding-top: 10px;
+    border-bottom: 1px grey solid;
+    background-color: rgb(43, 247, 179);
   }
 }

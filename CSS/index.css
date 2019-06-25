@@ -138,7 +138,7 @@ html {
 html,
 body {
   font-family: "Ubuntu", sans-serif;
-  color: #5e6164;
+  color: #110303;
 }
 h1,
 h2,
@@ -146,68 +146,120 @@ h3,
 h4,
 h5 {
   font-family: "Russo One", sans-serif;
-  color: #23293b;
 }
 h1 {
-  font-size: 3.2rem;
-}
-h3 {
-  font-size: 2.8rem;
+  font-size: 2rem;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+.section-container {
+  max-width: 850px;
+  width: 850px;
+  margin: auto;
 }
 @media (max-width:500px) {
-  .container {
-    width: 80%;
-    margin: 0;
+  .section-container {
+    max-width: 450px;
+    width: (max-width:500px);
+    margin: auto;
   }
 }
 .footer {
+  margin-top: 20px;
   background-color: purple;
   text-align: center;
   font-size: 1.5rem;
   padding: 8px;
-}
-.footer .footer_logos {
-  align-items: center;
+  margin-bottom: 10px;
 }
 .missionStatement {
-  padding: 10px;
+  margin-top: 4%;
+  margin-bottom: 4%;
 }
 .missionStatement h1 {
-  padding: 10px 0;
+  font-size: 2.5rem;
+  margin-bottom: 2%;
 }
-.missionStatement p {
-  padding: 10px 0;
+.custReview h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2%;
 }
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 400;
-  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
+.section-container {
+  width: 100%;
+  padding: 5px;
+  margin: auto;
 }
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
+.cr {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+.imgg {
+  margin-right: 5%;
 }
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+.imgg img {
+  border-radius: 70px;
+}
+.imgg p {
+  text-align: center;
+}
+.cr .review {
+  display: flex;
+}
+.review {
+  margin: 50px 0 50px 0;
+}
+@media (max-width:500px) {
+  .missionStatement {
+    margin-top: 4%;
+  }
+  .missionStatement h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  .missionStatement p {
+    text-align: center;
+  }
+  .custReview h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .section-container {
+    width: 100%;
+    max-width: 450px;
+    padding: 5px;
+    margin: auto;
+  }
+  .cr {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .imgg {
+    align-content: center;
+    margin: auto;
+  }
+  .imgg img {
+    border-radius: 70px;
+  }
+  .imgg p {
+    text-align: center;
+  }
+  .cr .review {
+    display: flex;
+  }
+  .review {
+    margin: 10px 0 30px 0;
+    text-align: center;
+  }
+  .custReview {
+    border-top: 1px grey solid;
+    padding-top: 10px;
+    border-bottom: 1px grey solid;
+    background-color: #2bf7b3;
+  }
 }

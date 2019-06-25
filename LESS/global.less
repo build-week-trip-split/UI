@@ -1,1 +1,45 @@
 // General Styles
+// General Styles
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  color: @main-font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  //color: @header-font-color;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.section-container {
+  max-width: 850px;
+  width: @full-width;
+  margin: auto;
+
+  @media @phone {
+    max-width: 450px;
+    width: @phone;
+    margin: auto;
+  }
+}
