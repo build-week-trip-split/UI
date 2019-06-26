@@ -10,20 +10,12 @@
         opacity: 0.8;
 
         .header-display {
-            top: 28%;
-            left: 40%;
-            // display: block; 
-            display: inline-table;
-            position: absolute;
-            text-align: center;
-
-            @media @mobile {
-                left: 28%;
-            }
             
-            @media @tablet {
-                left: 33%;
-            }
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: -webkit-fill-available;
 
             img {
                 justify-content: center;
