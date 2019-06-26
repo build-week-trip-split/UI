@@ -1,8 +1,4 @@
 .container {
-    // max-width: 850px;
-    // width: @full-width;
-    // margin: auto;
-
     .landing {
         background: url(../assets/landing.jpg) no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -40,37 +36,42 @@
                 font-size: 2rem;
             }
         }
-
     }
 
     .nav {
         background-color: #9858DB;
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between;
+        flex-direction: row;
         align-items: center;
         height: 60px;
         position: sticky;
         bottom: 0;
-        left: 0;
-        transition: .5s;
 
-        ul {
-            float: right;
-            margin: 0;
-            padding: 0;
-            display: flex;
+        transition: height 1s;
 
-            li {
-                list-style: none;
+        &:hover {
+            height: 7.5rem;
+        }
+
+        a {
+            float: left;
+            text-align: center;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 5px 20px;
+            transition: .5s;
+            font-size: 1.5rem;
+
+            &:hover {
+                color: #FFFF5C;
             }
+        }
 
-            a {
-                color: white;
-                text-decoration: none;
-                text-transform: uppercase;
-                padding: 5px 20px;
-                transition: .5s;
-                font-size: 1.3rem;
+        .right-nav a {
+            @media @mobile {
+                font-size: 1.4rem;
             }
         }
     }
@@ -81,46 +82,11 @@
         bottom: auto;
         width: 100%;
     }
-//   }
 
-//   .sticky {
-//     position: fixed;
-//     top: 0;
-//     max-width: 850px;
-//     width: @full-width;
-//     margin: auto;
-//   }
-
-  .who {
-    width: @full-width;
-  }
-
-  .features {
-    background-color: #9858db;
-  }
-}
-
-@media @phone {
-//   .container {
-//     max-width: 450px;
-//     width: @phone;
-//     margin: auto;
-//   }
-
-  .nav {
-    // max-width: 450px;
-    // width: @phone;
-    // margin: auto;
-    // background-color: #9858db;
-    // padding: 20px;
-
-    a {
-      text-decoration: none;
-      color: white;
+    .opacity {
+        opacity: 0.9;
     }
-  }
-  .logo {
-    max-width: 450px;
+}
 
 // <<<<<<< HEAD
 //     .features {
@@ -144,6 +110,6 @@
 //     h1 {
 //       margin: auto;
 // >>>>>>> ef62d6ca19e8063ee5ea887a7bbee7239b586a37
-    }
-}
+    // }
+// }
 // }
