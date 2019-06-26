@@ -1,0 +1,115 @@
+.about-container {
+  margin: 0 auto 0 auto;
+  max-width: 1024px;
+}
+
+.about-section {
+  font-size: 5rem;
+  background: white;
+
+  h1 {
+    color: @purp;
+    text-align: center;
+    padding-top: 3rem;
+    font-weight: 700;
+
+    @media @tablet {
+      text-align: center;
+    }
+  }
+
+  .about-us {
+    width: 100%;
+    display: flex;
+
+    @media @tablet {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @media @mobile {
+      flex-direction: column;
+      align-items: center;
+      margin-top: -20rem;
+    }
+
+    .about-us-pic {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      margin-right: 2.5rem;
+
+      @media @tablet {
+        width: 100%;
+        margin: 0;
+      }
+
+      @media @mobile {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      img {
+        border-radius: 100rem;
+        width: 100%;
+        height: auto;
+        max-width: 360px;
+        min-width: 360px;
+        margin-bottom: -20rem;
+        margin-top: -20rem;
+
+        @media @tablet {
+          margin-bottom: -20rem;
+          margin-top: -20rem;
+        }
+
+        @media @mobile {
+          margin: 0;
+          width: 70%;
+        }
+      }
+    }
+
+    .about-us-text {
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+
+      @media @tablet {
+        margin-top: 3rem;
+        justify-content: center;
+        margin-left: 0rem;
+        width: 80%;
+      }
+
+      @media @mobile {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        justify-content: center;
+        margin-left: 0rem;
+        width: 80%;
+      }
+
+      p {
+        width: 100%;
+        font-size: 1.8rem;
+        color: @purp;
+        margin-top: 6rem;
+        text-align: center;
+        margin-right: 3rem;
+
+        @media @tablet {
+          margin-top: 0;
+        }
+
+        @media @mobile {
+          margin-top: -20rem;
+        }
+      }
+    }
+  }
+}

@@ -1,90 +1,137 @@
 .container {
-  max-width: 850px;
-  width: @full-width;
-  margin: auto;
   .landing {
-    background-image: url(../assets/landing.jpeg);
+    background: url(../assets/landing.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 42rem;
+    min-height: 71rem;
+    width: 100%;
+    opacity: 0.8;
 
-    h1 {
-      margin: 0;
+    .header-display {
+      top: 28%;
+      left: 40%;
+      // display: block;
+      display: inline-table;
+      position: absolute;
+      text-align: center;
+
+      @media @mobile {
+        left: 28%;
+      }
+
+      @media @tablet {
+        left: 33%;
+      }
+
+      img {
+        justify-content: center;
+        border-radius: 8px;
+        margin-bottom: 3.5rem;
+      }
+
+      h1 {
+        margin: 0;
+        color: white;
+        font-size: 2rem;
+      }
+
+      button {
+        background: @purp;
+        color: white;
+        margin-top: 3.5rem;
+        padding: 1.5rem;
+        border-color: @purp;
+        border-radius: 0.8rem;
+        font-size: 2rem;
+        font-family: Quicksand;
+
+        &:hover {
+          transition: 0.8s;
+          background-color: #ffff5c;
+          border-color: #ffff5c;
+          color: @purp;
+        }
+      }
     }
   }
 
   .nav {
-    max-width: 850px;
-    width: @full-width;
-    margin: auto;
-    background-color: #9858db;
-    padding: 20px;
+    background-color: @purp;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    position: sticky;
+    bottom: 0;
+    max-width: @full-width;
+    width: 100%;
 
-    .logo {
-      width: 10px;
+    transition: height 1s;
+
+    &:hover {
+      height: 7.5rem;
     }
 
     a {
-      text-decoration: none;
+      float: left;
+      text-align: center;
       color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 5px 20px;
+      transition: 0.5s;
+      font-size: 1.5rem;
+
+      &:hover {
+        color: #ffff5c;
+      }
+    }
+
+    .right-nav a {
+      @media @mobile {
+        font-size: 1.4rem;
+      }
     }
   }
 
   .sticky {
     position: fixed;
     top: 0;
-    max-width: 850px;
-    width: @full-width;
-    margin: auto;
+    bottom: auto;
+    width: 100%;
   }
 
-  .who {
-    width: @full-width;
+  .opacity {
+    opacity: 0.9;
   }
-
-  .features {
-    background-color: #9858db;
-  }
-}
-
-@media @phone {
-  .container {
-    max-width: 450px;
-    width: @phone;
-    margin: auto;
-  }
-
-  .nav {
-    max-width: 450px;
-    width: @phone;
-    margin: auto;
-    background-color: #9858db;
-    padding: 20px;
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-  }
-  .logo {
-    max-width: 450px;
-
-    margin: auto;
-  }
-  .who {
-    max-width: 450px;
-    width: @phone;
-    margin: auto;
-  }
-  .landing {
-    background-image: url(../assets/landing.jpeg);
-    background-size: 430px;
-    background-repeat: no-repeat;
-
-    margin: auto;
-
-    h1 {
+  @media @phone {
+    .nav {
+      background-color: @purp;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      align-items: center;
+      height: 60px;
+      position: sticky;
+      bottom: 0;
+      max-width: 500px;
+      width: 100%;
       margin: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      .right-nav a {
+        align-content: center;
+      }
+      .sticky {
+        position: fixed;
+        top: 0;
+        bottom: auto;
+        width: 100%;
+      }
     }
   }
 }

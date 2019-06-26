@@ -1,110 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Us</title>
+    <title>Trip Split</title>
+    <!-- <link rel="icon" href="./favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="./components/NavBar.js" async></script>
+    <script src="./components/meet-the-team.js" async></script>
 </head>
-<body>
-    <section class="meet-the-team">
-          
-        <!-- TABS COMPONENT -->
-        <div class="tabs">
-                <div class="jobs">
-                <span class="title">Employees:</span>
-                <div data-tab="all" class="tab active-tab">ALL</div>
-                <div data-tab="frontend" class="tab">Frontend</div>
-                <div data-tab="backend" class="tab">Backend</div>
-                <div data-tab="UI" class="tab">UI</div>
-                <div data-tab="team-lead" class="tab">Team Lead</div>
+    <body class="about-container">
+        
+        <!-- =============== Header =================  -->
+        
+        <header>
+                <div class="nav" id="navbar">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Log In</a>
+                    <a href="#">Sign Up</a>
+                </div>
+        </header>
+
+        <!-- ================ about-us ================ -->
+        
+        <section class="about-section">
+            <h1 class="about-header">About Us</h1>
+            <div class="about-us">
+                <div class="about-us-pic">
+                    <img src="/assets/about-svg.svg" alt="">
+                </div>
+                <div class="about-us-text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit adipisci, pariatur magnam alias facere eligendi ullam? Exercitationem voluptatem eveniet tempora cupiditate qui! Placeat corporis vitae voluptas autem odio animi adipisci? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis doloribus vel sint labore, in sequi quia? Quasi, optio sapiente commodi quod dolorem explicabo, tempore assumenda, earum adipisci nihil asperiores iste.</p>
                 </div>
             </div>
+        </section>
+
+        <!-- =============== Meet the Team/Component Section =============== -->
+        <section class="meet-the-team">
             
-            <!-- STRETCH GOAL: ONLY UNCOMMENT THIS WHEN YOU ARE FINISHED WITH THE MAIN OBJECTIVE -->
-            <!-- CAROUSEL COMPONENT -->
-            <!-- <div class="carousel">
-                <div class="left-button"><</div>
-                <img src="./assets/carousel/mountains.jpeg" />
-                <img src="./assets/carousel/computer.jpeg" />
-                <img src="./assets/carousel/trees.jpeg" />
-                <img src="./assets/carousel/turntable.jpeg" />
-                <div class="right-button">></div>
-            </div> -->
-            
-            <!-- CARDS COMPONENT -->
-            <div class="cards-container">
-            
-                <!-- CARD COMPONENTS -->
+            <!-- TABS COMPONENT -->
+            <div class="tabs">
+                    <div class="jobs">
+                    <span class="title">Employees:</span>
+                    <div data-tab="all" class="tab active-tab">ALL</div>
+                    <div data-tab="frontend" class="tab">Frontend</div>
+                    <div data-tab="backend" class="tab">Backend</div>
+                    <div data-tab="UI" class="tab">UI</div>
+                    <div data-tab="team-lead" class="tab">Team Lead</div>
+                    </div>
+                </div>
                 
-                <!-- ===== Steve ====== -->
-                <div class="card" data-tab="team-lead">
-                <div class="headline">Steve Delfaus</div>
-                <div class="author">
-                    <div class="img-container">
-                    <img src="./assets/sir.jpg" />
+                <!-- STRETCH GOAL: ONLY UNCOMMENT THIS WHEN YOU ARE FINISHED WITH THE MAIN OBJECTIVE -->
+                <!-- CAROUSEL COMPONENT -->
+                <!-- <div class="carousel">
+                    <div class="left-button"><</div>
+                    <img src="./assets/carousel/mountains.jpeg" />
+                    <img src="./assets/carousel/computer.jpeg" />
+                    <img src="./assets/carousel/trees.jpeg" />
+                    <img src="./assets/carousel/turntable.jpeg" />
+                    <div class="right-button">></div>
+                </div> -->
+                
+                <!-- CARDS COMPONENT -->
+                <div class="cards-container">
+                
+                    <!-- CARD COMPONENTS -->
+                    
+                    <!-- ===== Steve ====== -->
+                    <div class="card" data-tab="team-lead">
+                        <img src="./assets/profile-pics/steve.png" alt="picture of steve">
+                        <div class="about-team">
+                            <h2>Steve - Team Lead</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ut deserunt cum suscipit officia qui aliquam. Laboriosam sit ipsam asperiores, qui repudiandae vero numquam vel, alias magni, quo magnam quasi.</p>
+                        </div>
                     </div>
-                    <span>By SIR RUFF'N'STUFF</span>
-                </div>
-                </div>
-            
-                <!-- ===== Vicky  ====== -->
-                <div class="card" data-tab="UI">
-                <div class="headline">Vicky Vue</div>
-                <div class="author">
-                    <div class="img-container">
-                    <img src="./assets/fido.jpg" />
+                    
+                    <!-- ===== Vicky  ====== -->
+                    <div class="card" data-tab="UI">
+                        <img src="./assets/profile-pics/vicky.png" alt="picture of vicky">
+                        <div class="about-team">
+                            <h2>Vicky - UI</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ut deserunt cum suscipit officia qui aliquam. Laboriosam sit ipsam asperiores, qui repudiandae vero numquam vel, alias magni, quo magnam quasi.</p>
+                        </div>
                     </div>
-                    <span>By FIDO WALKSALOT</span>
-                </div>
-                </div>
-            
-                <!-- ===== Shane ====== -->
-                <div class="card" data-tab="frontend">
-                <div class="headline">Shane Gooch</div>
-                <div class="author">
-                    <div class="img-container">
-                    <img src="./assets/max.jpg" />
-                    </div>
-                    <span>By MAX GOODBOYE</span>
-                </div>
-                </div>
 
-                <!-- ===== Navid ====== -->
-                <div class="card" data-tab="backend">
-                <div class="headline">Navid Karami</div>
-                <div class="author">
-                    <div class="img-container">
-                    <img src="./assets/fido.jpg" />
-                    </div>
-                    <span>By FIDO WALKSALOT</span>
-                </div>
-                </div>
+                    
+                    <!-- ===== Shane  ====== -->
+                    <div class="card" data-tab="frontend">
+                            <img src="./assets/profile-pics/shane.png" alt="picture of shane">
+                            <div class="about-team">
+                                <h2>Shane - Frontend</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ut deserunt cum suscipit officia qui aliquam. Laboriosam sit ipsam asperiores, qui repudiandae vero numquam vel, alias magni, quo magnam quasi.</p>
+                            </div>
+                        </div>   
+                        
+                        
 
-                <!-- ===== Christian ====== -->
-                <div class="card" data-tab="UI">
-                <div class="headline">Christian Ubani</div>
-                <div class="author">
-                    <div class="img-container">
-                    <img src="./assets/fido.jpg" />
-                    </div>
-                    <span>By FIDO WALKSALOT</span>
-                </div>
-                </div>
+                    <!-- ===== Navid  ====== -->
+                    <div class="card" data-tab="backend">
+                            <img src="./assets/profile-pics/navid.png" alt="picture of navid">
+                            <div class="about-team">
+                                <h2>Navid - Backend</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ut deserunt cum suscipit officia qui aliquam. Laboriosam sit ipsam asperiores, qui repudiandae vero numquam vel, alias magni, quo magnam quasi.</p>
+                            </div>
+                        </div>
 
-                <!-- ===== Elijah ====== -->
-                <div class="card" data-tab="UI">
-                <div class="headline">Elijah McKay </div>
-                <div class="author">
-                     <div class="img-container">
-                     <img src="./assets/fido.jpg" />
+                    <!-- ===== Christian  ====== -->
+                    <div class="card" data-tab="UI">
+                            <img src="./assets/profile-pics/christian.png" alt="picture of christian">
+                            <div class="about-team">
+                                <h2>Christian - UI</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ut deserunt cum suscipit officia qui aliquam. Laboriosam sit ipsam asperiores, qui repudiandae vero numquam vel, alias magni, quo magnam quasi.</p>
+                            </div>
+                        </div>
+
+                    <!-- ===== Elijah  ====== -->
+                    <div class="card" data-tab="UI">
+                            <img src="./assets/profile-pics/elijah.png" alt="picture of elijah">
+                            <div class="about-team">
+                                <h2>Elijah - UI</h2>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus ut deserunt cum suscipit officia qui aliquam. Laboriosam sit ipsam asperiores, qui repudiandae vero numquam vel, alias magni, quo magnam quasi.</p>
+                            </div>
+                        </div>
+                    <!-- ===== Elijah ====== -->
+
                     </div>
-                    <span>By FIDO WALKSALOT</span>
-                </div>
                 </div>
             </div>
-                
-    </section>
-    
-</body>
+
+        <div class="footer">
+            <div class="copyright">
+                <div class="builtBy">
+                    Built By Lambda Schools, USA
+                </div>
+                <div id="copyright">
+                    Copyright © 2019 Trip Split, Inc. All rights reserved.
+                </div>
+            </div>
+        </div>   
+                    
+        </section>
+        
+    </body>
 </html>
