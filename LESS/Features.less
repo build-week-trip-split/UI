@@ -1,66 +1,56 @@
-.intro-container {
+.features {
+    background-color: @purp;
+    padding-bottom: 5rem;
+    margin-top: 7rem;
 
-    .intro {
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 7.5rem;
-    
-        h2 {
+    h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        padding-top: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    .slide-container {
+        font-size: 1.8rem;
+        margin-left: 15%;
+        margin-right: 15%;
+        position: relative;
+        text-align: center;
+        
+        .dots-container{
             text-align: center;
-            font-size: 3.5rem;
-            margin-bottom: 5rem;
+            margin-top: 30px;
 
-            @media @mobile {
-                margin-bottom: 3rem;
-            }
-        }
-        
-        .desc {
-            display: flex;
-
-            @media @mobile {
-                display: block;
+            .dot {
+                height: 13px;
+                width: 13px;
+                margin: 0 2px;
+                background-color: white;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
             }
 
-            @media @tablet {
-                display: block;
-            }
-
-            p {
-                font-size: 1.8rem;
-                margin: 10% 0;
-                margin-right: 5rem;
-
-                @media @mobile {
-                    text-align: center;
-                    margin-right: 0;
-                }
-
-                @media @tablet {
-                    text-align: center;
-                    margin-right: 0;
-                }
-            }
-        
-            img {
-                display: block;
-                max-width: 50%;
-                min-width: 50%;
-
-                @media @mobile {
-                    max-width: 100%;
-                    margin: 2rem;
-                }
-
-                @media @tablet {
-                    max-width: 80%;
-                    margin: 8rem;
-                }
+            .active {
+                background-color: #FFFF5C;
             }
         }
     }
 }
 
-.features {
-    background-color: #9858DB;
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
