@@ -8,17 +8,40 @@
     background: @purp; 
     color: @purp;
 
+    @media @tablet {
+        margin-top: 5rem;
+        flex-direction: column; 
+        text-align: center; 
+        align-items: center; 
+    }
+
+    @media @mobile {
+        margin-top: 5rem;
+        flex-direction: column; 
+        text-align: center; 
+        align-items: center; 
+    }
+
     .tab {
         background: white; 
-        width: %; 
         border: 1px solid white; 
         text-decoration: none; 
         margin-top: 3rem; 
-        font-size: 3rem; 
+        font-size: 2rem; 
         border-radius: 2rem; 
         color: @purp; 
         padding: .5rem 2rem; 
         margin: 3rem 2rem; 
+
+        @media @tablet {
+            width: 45%; 
+            margin-bottom: 0; 
+        }
+
+        @media @mobile {
+            width: 45%;
+            margin-bottom: 0; 
+        }
 
         &:hover {
             background: rgb(199, 195, 195); 
