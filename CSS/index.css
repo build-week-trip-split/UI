@@ -41,7 +41,7 @@ p {
   background-size: cover;
   min-height: 71rem;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .container .landing .header-display {
   display: flex;
@@ -257,10 +257,6 @@ p {
     opacity: 1;
   }
 }
-.container {
-  margin: 0 auto 0 auto;
-  max-width: 1024px;
-}
 .container .landing {
   background: url(../assets/landing.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -269,7 +265,6 @@ p {
   background-size: cover;
   min-height: 71rem;
   width: 100%;
-  opacity: 1;
 }
 .container .landing .header-display {
   display: flex;
@@ -313,7 +308,6 @@ p {
   height: 60px;
   position: sticky;
   bottom: 0;
-  max-width: 1024px;
   transition: height 1s;
 }
 @media (max-width: 460px) {
