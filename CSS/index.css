@@ -44,9 +44,9 @@ p {
   opacity: 0.8;
 }
 .container .landing .header-display {
-  top: 32%;
+  top: 28%;
   left: 40%;
-  display: block;
+  display: inline-table;
   position: absolute;
   text-align: center;
 }
@@ -63,12 +63,28 @@ p {
 .container .landing .header-display img {
   justify-content: center;
   border-radius: 8px;
-  margin-bottom: 35px;
+  margin-bottom: 3.5rem;
 }
 .container .landing .header-display h1 {
   margin: 0;
   color: white;
   font-size: 2rem;
+}
+.container .landing .header-display button {
+  background: #9858DB;
+  color: white;
+  margin-top: 3.5rem;
+  padding: 1.5rem;
+  border-color: #9858DB;
+  border-radius: 0.8rem;
+  font-size: 2rem;
+  font-family: Quicksand;
+}
+.container .landing .header-display button:hover {
+  transition: 0.8s;
+  background-color: #FFFF5C;
+  border-color: #FFFF5C;
+  color: #9858DB;
 }
 .container .nav {
   background-color: #9858DB;
