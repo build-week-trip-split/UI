@@ -294,6 +294,12 @@ p {
     margin-top: -20rem;
   }
 }
+.footer {
+  color: white;
+}
+.footer .copyright {
+  font-size: 2rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -579,6 +585,30 @@ table {
     background-color: #2bf7b3;
   }
 }
+.tabs {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  background: #9858DB;
+  color: #9858DB;
+}
+.tabs .tab {
+  background: white;
+  width: %;
+  border: 1px solid white;
+  text-decoration: none;
+  margin-top: 3rem;
+  font-size: 3rem;
+  border-radius: 2rem;
+  color: #9858DB;
+  padding: 0.5rem 2rem;
+  margin: 3rem 2rem;
+}
+.tabs .tab:hover {
+  background: #c7c3c3;
+  border: 1px solid #c7c3c3;
+}
 .card {
   background: #9858DB;
   font-size: 2rem;
@@ -586,6 +616,7 @@ table {
   display: flex;
   width: 100%;
   padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .card {
