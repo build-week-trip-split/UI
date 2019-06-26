@@ -176,6 +176,109 @@ p {
 .features {
   background-color: #9858DB;
 }
+body {
+  margin: 0 auto 0 auto;
+}
+@media (min-width: 1024px) {
+  body {
+    max-width: 1024px;
+  }
+}
+.about-section {
+  font-size: 5rem;
+  background: white;
+}
+.about-section h1 {
+  color: #9858DB;
+  text-align: center;
+  padding-top: 3rem;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .about-section h1 {
+    text-align: center;
+  }
+}
+.about-section .about-us {
+  width: 100%;
+  display: flex;
+  padding: 3rem 0rem;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .about-section .about-us {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 500px) {
+  .about-section .about-us {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about-section .about-us .about-us-pic {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-right: 2.5rem;
+  max-width: 500px;
+  min-width: 400px;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .about-section .about-us .about-us-pic {
+    width: 100%;
+    margin: 0;
+  }
+}
+@media (max-width: 500px) {
+  .about-section .about-us .about-us-pic {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.about-section .about-us .about-us-pic img {
+  border-radius: 100rem;
+  width: 70%;
+  height: auto;
+}
+@media (max-width: 500px) {
+  .about-section .about-us .about-us-pic img {
+    margin: 0;
+    width: 70%;
+  }
+}
+.about-section .about-us .about-us-text {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .about-section .about-us .about-us-text {
+    margin-top: 3rem;
+    justify-content: center;
+    margin-left: 0rem;
+    width: 80%;
+  }
+}
+@media (max-width: 500px) {
+  .about-section .about-us .about-us-text {
+    flex-direction: column;
+    margin-top: 3rem;
+    justify-content: center;
+    margin-left: 0rem;
+    width: 80%;
+  }
+}
+.about-section .about-us .about-us-text p {
+  width: 100%;
+  font-size: 1.8rem;
+  color: #9858DB;
+}
+.meet-the-team {
+  margin-top: 7rem;
+}
 /* http://meyerweb.com/eric/tools/css/reset/
 v2.0 | 20110126
 License: none (public domain)
@@ -461,9 +564,47 @@ table {
     background-color: #2bf7b3;
   }
 }
+.card {
+  background: #9858DB;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  padding-top: 3rem;
+}
+.card img {
+  border-radius: 100rem;
+  width: 50%;
+  max-width: 360px;
+  max-height: 360px;
+  min-width: 360px;
+  min-height: 360px;
+  margin: auto;
+}
+.card .about-team {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-right: 4rem;
+  margin-bottom: 3rem;
+}
+.card .about-team h2 {
+  margin-top: 2rem;
+  color: white;
+  font-size: 3.8rem;
+  font-weight: 700;
+}
+.card .about-team p {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+}
 html {
   box-sizing: border-box;
-  margin: auto;
 }
 *,
 *:before,

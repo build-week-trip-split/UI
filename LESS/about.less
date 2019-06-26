@@ -1,0 +1,106 @@
+
+body {
+    margin: 0 auto 0 auto; 
+
+    @media @desktop {
+        max-width: 1024px;
+    }
+}
+
+
+.about-section {
+    font-size: 5rem; 
+    background: white; 
+
+    h1 {
+        color: @purp; 
+        text-align: center; 
+        padding-top: 3rem; 
+
+        @media @tablet {
+            text-align: center; 
+        }
+    }
+
+    .about-us {
+        width: 100%; 
+        display: flex; 
+        padding: 3rem 0rem; 
+
+        @media @tablet {
+            flex-direction: column; 
+            align-items: center; 
+        }
+
+        @media @mobile {
+            flex-direction: column; 
+            align-items: center;
+        }
+
+        .about-us-pic {
+            width: 100%; 
+            display: flex; 
+            justify-content: center; 
+            margin-right: 2.5rem; 
+            max-width: 500px; 
+            min-width: 400px; 
+            
+            @media @tablet {
+                width: 100%; 
+                margin: 0; 
+            }
+
+            @media @mobile {
+                width: 100%;
+                margin-right: 0; 
+            }
+
+            img {
+                border-radius: 100rem;  
+                width: 70%; 
+                height: auto; 
+
+                @media @mobile {
+                    margin: 0; 
+                    width: 70%; 
+                }
+            }
+        }
+        
+        .about-us-text {
+            width: 45%; 
+            display: flex; 
+            align-items: center;
+            justify-content: center; 
+            align-content: center;  
+            text-align: center; 
+
+            @media @tablet {
+                margin-top: 3rem; 
+                justify-content: center; 
+                margin-left: 0rem; 
+                width: 80%; 
+            }
+
+            @media @mobile {
+                flex-direction: column; 
+                margin-top: 3rem; 
+                justify-content: center; 
+                margin-left: 0rem; 
+                width: 80%; 
+            }
+
+            p {
+                width: 100%; 
+                font-size: 1.8rem; 
+                color: @purp; 
+            }
+        }
+    }
+
+}
+
+.meet-the-team {
+    margin-top: 7rem;
+}
+
