@@ -17,16 +17,11 @@ h5 {
   font-family: "Russo One", sans-serif;
 }
 h1 {
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
-}
-.section-container {
-  max-width: 850px;
-  width: 850px;
-  margin: auto;
 }
 @media (max-width:500px) {
   max-width: 450px;
@@ -61,23 +56,23 @@ p {
   font-size: 2rem;
 }
 .container .landing .header-display button {
-  background: #9858DB;
+  background: #9858db;
   color: white;
   margin-top: 3.5rem;
   padding: 1.5rem;
-  border-color: #9858DB;
+  border-color: #9858db;
   border-radius: 0.8rem;
   font-size: 2rem;
   font-family: Quicksand;
 }
 .container .landing .header-display button:hover {
   transition: 0.8s;
-  background-color: #FFFF5C;
-  border-color: #FFFF5C;
-  color: #9858DB;
+  background-color: #ffff5c;
+  border-color: #ffff5c;
+  color: #9858db;
 }
 .container .nav {
-  background-color: #9858DB;
+  background-color: #9858db;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -101,7 +96,7 @@ p {
   font-size: 1.5rem;
 }
 .container .nav a:hover {
-  color: #FFFF5C;
+  color: #ffff5c;
 }
 @media (max-width: 500px) {
   .container .nav .right-nav a {
@@ -110,6 +105,7 @@ p {
 }
 .container .sticky {
   position: fixed;
+  z-index: 100;
   top: 0;
   bottom: auto;
   width: 100%;
@@ -202,7 +198,7 @@ p {
   }
 }
 .features {
-  background-color: #9858DB;
+  background-color: #9858db;
   padding-bottom: 5rem;
   margin-top: 5rem;
 }
@@ -284,11 +280,11 @@ p {
   font-size: 2rem;
 }
 .container .landing .header-display button {
-  background: #9858DB;
+  background: #9858db;
   color: white;
   margin-top: 3.5rem;
   padding: 1.5rem;
-  border-color: #9858DB;
+  border-color: #9858db;
   border-radius: 0.8rem;
   font-size: 2rem;
   font-family: Quicksand;
@@ -297,10 +293,10 @@ p {
   transition: 0.8s;
   background-color: #FFFF5C;
   border-color: #FFFF5C;
-  color: #9858DB;
+  color: #9858db;
 }
 .container .nav {
-  background-color: #9858DB;
+  background-color: #9858db;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -352,7 +348,7 @@ p {
   margin-top: 5rem;
 }
 .about-section h1 {
-  color: #9858DB;
+  color: #9858db;
   text-align: center;
   padding-top: 3rem;
   font-weight: 700;
@@ -447,7 +443,7 @@ p {
 .about-section .about-us .about-us-text p {
   width: 100%;
   font-size: 1.8rem;
-  color: #9858DB;
+  color: #9858db;
   margin-top: 6rem;
   text-align: center;
   margin-right: 3rem;
@@ -465,7 +461,7 @@ p {
   }
 }
 footer {
-  color: #9858DB;
+  color: #9858db;
   font-size: 2rem;
   max-width: 1024px;
   margin: auto;
@@ -612,24 +608,62 @@ table {
   padding: 8px;
 }
 .section-container {
-  width: 100%;
-  padding: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  max-width: 1024px;
   margin: auto;
+  width: 100%;
 }
 .missionStatement {
   margin-top: 4%;
   margin-bottom: 4%;
 }
 .missionStatement h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 2%;
+  font-weight: 700;
 }
 .missionStatement p {
-  font-size: 1.2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.features {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.features h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2%;
+  font-weight: 700;
+}
+.features p {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.features .feature p {
+  padding: 0 15px 15px 0;
+}
+.features .feature h3 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+.whatItDoes {
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+.whatItDoes h1 {
+  font-size: 3.5rem;
+  margin-bottom: 2%;
+  font-weight: 700;
+}
+.whatItDoes p {
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 .custReview h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 2%;
+  font-weight: 700;
 }
 .cr {
   display: flex;
@@ -638,78 +672,143 @@ table {
 }
 .imgg {
   margin-right: 5%;
+  padding-bottom: 10px;
 }
 .imgg img {
   border-radius: 70px;
 }
 .imgg p {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 .cr .review {
   display: flex;
 }
 .review {
   margin: 50px 0 50px 0;
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 @media (max-width:500px) {
-  .missionStatement {
-    margin-top: 4%;
-    margin-bottom: 4%;
-  }
-  .missionStatement h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2%;
-  }
-  .missionStatement p {
-    font-size: 1.2rem;
-  }
-  .missionStatement h1 {
-    text-align: center;
-  }
-  .custReview h1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .section-container {
+  .container {
     width: 100%;
-    max-width: 450px;
+    max-width: 600px;
     padding: 5px;
     margin: auto;
   }
-  .cr {
+  .container .missionStatement {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .container .missionStatement h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2%;
+    font-weight: 700;
+  }
+  .container .missionStatement p {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .container .missionStatement h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .container .features {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .container .features h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2%;
+    font-weight: 700;
+  }
+  .container .features p {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .container .features h1 {
+    text-align: center;
+  }
+  .container .whatItDoes {
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+  .container .whatItDoes h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2%;
+    font-weight: 700;
+  }
+  .container .whatItDoes p {
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+  .container .whatItDoes h1 {
+    text-align: center;
+  }
+  .container .custReview h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 700;
+  }
+  .container .section-container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  .container .cr {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
   }
-  .imgg {
+  .container .feature {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  .container .feature h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .container .feature p {
+    text-align: center;
+    padding: 5px;
+  }
+  .container .imgg {
     align-content: center;
     margin: auto;
   }
-  .imgg img {
+  .container .imgg img {
     border-radius: 70px;
   }
-  .imgg p {
+  .container .imgg p {
     text-align: center;
     font-size: 1.5rem;
   }
-  .cr .review {
+  .container .cr .review {
     display: flex;
   }
-  .review {
+  .container .review {
     margin: 10px 0 30px 0;
     text-align: center;
   }
-  .review p {
+  .container .review p {
     font-size: 1.2rem;
   }
-  .custReview {
+  .container .custReview {
     border-top: 1px grey solid;
     padding-top: 10px;
     border-bottom: 1px grey solid;
-    background-color: #2bf7b3;
+    background-color: #9858db;
+  }
+  .footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px;
+    background-color: white;
   }
 }
 .tabs {
@@ -717,8 +816,8 @@ table {
   justify-content: center;
   font-size: 2rem;
   font-weight: 700;
-  background: #9858DB;
-  color: #9858DB;
+  background: #9858db;
+  color: #9858db;
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .tabs {
@@ -743,7 +842,7 @@ table {
   margin-top: 3rem;
   font-size: 2rem;
   border-radius: 2rem;
-  color: #9858DB;
+  color: #9858db;
   padding: 0.5rem 2rem;
   margin: 3rem 2rem;
 }
@@ -764,7 +863,7 @@ table {
   border: 1px solid #c7c3c3;
 }
 .card {
-  background: #9858DB;
+  background: #9858db;
   font-size: 2rem;
   text-align: center;
   display: flex;
