@@ -40,7 +40,7 @@ p {
   -o-background-size: cover;
   background-size: cover;
   min-height: 71rem;
-  width: 100%;
+  max-height: width: 100%;
   opacity: 0.9;
 }
 .container .landing .header-display {
@@ -113,6 +113,7 @@ p {
   top: 0;
   bottom: auto;
   width: 100%;
+  z-index: 1;
 }
 .intro-container .intro {
   margin-left: 15%;
@@ -202,6 +203,7 @@ p {
   }
 }
 .features {
+  color: white;
   background-color: #9858DB;
   padding-bottom: 5rem;
   margin-top: 5rem;
@@ -211,6 +213,7 @@ p {
   font-size: 3rem;
   padding-top: 5rem;
   margin-bottom: 5rem;
+  text-decoration: underline;
 }
 .features .slide-container {
   font-size: 1.8rem;
@@ -219,23 +222,34 @@ p {
   position: relative;
   text-align: center;
 }
-.features .slide-container .dots-container {
-  text-align: center;
-  margin-top: 30px;
+.features .slide-container .slides h3 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
 }
-.features .slide-container .dots-container .dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.features .slide-container .slides p {
+  margin-bottom: 3rem;
 }
-.features .slide-container .dots-container .active {
-  background-color: #FFFF5C;
+.features .slide-container .slides p:hover {
+  color: #FFFF5C;
 }
-.fade {
+.features .slide-container .slides img {
+  height: auto;
+  max-height: 300px;
+  max-width: 100%;
+  border-radius: 1rem;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 5rem;
+}
+.features .slide-container .slides .venmo {
+  max-height: 175px;
+  max-width: 80%;
+  height: auto;
+}
+.features .slide-container .slides .img-adj {
+  max-height: 250px;
+}
+.features .slide-container .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -256,6 +270,21 @@ p {
   to {
     opacity: 1;
   }
+}
+.features .slide-container .dots-container {
+  text-align: center;
+}
+.features .slide-container .dots-container .dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.features .slide-container .dots-container .active {
+  background-color: #FFFF5C;
 }
 .container .landing {
   background: url(../assets/landing.jpg) no-repeat center center fixed;

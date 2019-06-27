@@ -1,9 +1,8 @@
 let slideIndex = 0;
+const features = document.getElementsByClassName('slides');
+const dots = document.getElementsByClassName('dot');
 
 const featureSlides = () => {
-
-    const features = document.getElementsByClassName('slides');
-    const dots = document.getElementsByClassName('dot');
     
     for (let i = 0; i < features.length; i++) {
         features[i].style.display = "none";
@@ -21,7 +20,8 @@ const featureSlides = () => {
 
     features[slideIndex - 1].style.display = "block";
     dots[slideIndex - 1].className += " active";
-    setTimeout(featureSlides, 3000);
+    setTimeout(featureSlides, 4500);
+
 };
 
-featureSlides();
+// featureSlides();
