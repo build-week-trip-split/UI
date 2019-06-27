@@ -12,10 +12,3 @@ function stickyNav() {
 }
 
 window.addEventListener('scroll', stickyNav);
-
-// Get Started Button Click
-document.getElementById('start');
-function getStarted() {
-  location.href = "https://trip-split123.netlify.com/";
-}
-document.addEventListener('onclick', getStarted);
