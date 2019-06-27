@@ -932,6 +932,238 @@ table {
     margin-right: 0rem;
   }
 }
+* {
+  box-sizing: border-box;
+}
+.cont {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  padding: 15px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.wrapper > * {
+  padding: 1rem;
+}
+.our-infor {
+  background: #9858db;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500px;
+  margin: 0 0 1.5rem;
+  padding: 10px;
+}
+.our-infor h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.ur-contact {
+  box-shadow: 0 0 2px 0 rebeccapurple;
+  align-content: center;
+  width: 40%;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: rgba(34, 36, 31, 0.151);
+}
+.ur-contact h3 {
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.ur-contact form label input {
+  width: 70%;
+}
+.ur-contact form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+.ur-contact form label {
+  display: block;
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.ur-contact form p {
+  margin: 0;
+}
+.ur-contact form .full {
+  grid-column: 0.33333333;
+}
+.ur-contact form button,
+.ur-contact form input,
+.ur-contact form textarea {
+  width: 100%;
+  padding: 1rem;
+}
+.ur-contact form button {
+  background: greyscale;
+  border: 0;
+  text-transform: uppercase;
+}
+.ur-contact form button:hover,
+.ur-contact form button:focus {
+  background: darkgrey;
+  color: white;
+  outline: 0;
+}
+.nav {
+  background-color: #9858db;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  position: sticky;
+  bottom: 0;
+  margin: auto;
+  transition: height 1s;
+}
+.nav:hover {
+  height: 7.5rem;
+}
+.nav a {
+  float: left;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 20px;
+  transition: 0.5s;
+  font-size: 1.5rem;
+}
+.nav a:hover {
+  color: #ffff5c;
+}
+@media (max-width: 500px) {
+  .nav .right-nav a {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width:500px) {
+  .cont {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    padding: 15px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+  .wrapper > * {
+    padding: 1rem;
+  }
+  .our-infor {
+    background: #9858db;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500px;
+    margin: 0 0 1.5rem;
+    padding: 10px;
+  }
+  .our-infor h3 {
+    font-family: cursive;
+  }
+  .ur-contact {
+    box-shadow: 0 0 2px 0 rebeccapurple;
+    align-content: center;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: rgba(34, 36, 31, 0.151);
+  }
+  .ur-contact h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+  }
+  .ur-contact form label input {
+    width: 100%;
+  }
+  .ur-contact form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+  .ur-contact form label {
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    color: black;
+  }
+  .ur-contact form p {
+    margin: 0;
+  }
+  .ur-contact form .full {
+    grid-column: 0.33333333;
+  }
+  .ur-contact form button,
+  .ur-contact form input,
+  .ur-contact form textarea {
+    width: 100%;
+    padding: 1rem;
+  }
+  .ur-contact form button {
+    background: greyscale;
+    border: 0;
+    text-transform: uppercase;
+  }
+  .ur-contact form button:hover,
+  .ur-contact form button:focus {
+    background: darkgrey;
+    color: white;
+    outline: 0;
+  }
+  .nav {
+    background-color: #9858db;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 50px;
+    position: sticky;
+    bottom: 0;
+    margin: auto;
+    width: 450px;
+    transition: height 1s;
+  }
+  .nav:hover {
+    height: 7.5rem;
+  }
+  .nav a {
+    float: left;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-size: 1.3rem;
+    margin: auto;
+  }
+  .nav a:hover {
+    color: #ffff5c;
+  }
+}
+@media (max-width:500px) and (max-width: 500px) {
+  .nav .right-nav a {
+    font-size: 1.3rem;
+  }
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -946,5 +1178,5 @@ body {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }

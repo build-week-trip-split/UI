@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trip Split</title>
+    <!-- <link rel="icon" href="./favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./components/NavBar.js" async></script>
+    <script src="./components/Features.js" async></script>
+  </head>
+
+  <body>
+    <div class="cont">
+      <div class="nav" id="navbar">
+        <a class="left-nav" href="index.html">Trip Split</a>
+        <div class="right-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="https://trip-split123.netlify.com/">Log In</a>
+          <a href="https://trip-split123.netlify.com/">Sign Up</a>
+        </div>
+      </div>
+
+      <h1 class="aim">We'd Like To Hear From You</h1>
+      <div class="wrapper">
+        <div class="our-infor">
+          <h3>Our Contact-Information:</h3>
+          <ul>
+            <li><i class="fa fa-road"></i> Lambda School</li>
+            <li><i class="fa fa-phone"></i> (123)-456-7893</li>
+            <li><i class="fa fa-envelope"></i> em@email.com</li>
+          </ul>
+        </div>
+        <div class="ur-contact">
+          <h3>Email Us</h3>
+          <form id="contactform">
+            <p>
+              <label>First Name</label>
+              <input
+                type="text"
+                name="name"
+                id="firstName"
+                placeholder="Type in your First Name"
+              />
+            </p>
+            <p>
+              <label>Last Name</label>
+              <input
+                type="text"
+                name="name"
+                id="lastName"
+                placeholder="Type in your Last Name "
+              />
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input
+                type="text"
+                name="phone number"
+                id="phone"
+                placeholder="Type in your Phone Number"
+              />
+            </p>
+            <p>
+              <label>Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="Type in your Email Address"
+              />
+            </p>
+            <p>
+              <label>Message</label>
+              <textarea
+                name="message"
+                rows="5"
+                id="testArea"
+                placeholder="Type in your Message Here"
+              ></textarea>
+            </p>
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="copyright">
+          <div class="bulitBy">Built By Lambda Schools, USA</div>
+          <div id="copyright">
+            Copyright © 2019 Trip Split, Inc. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
