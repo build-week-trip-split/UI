@@ -11,7 +11,9 @@ function submitForm(event) {
   let message = getInputValue("testArea");
 
   console.log(firstName);
+  document.getElementById("contactform").reset();
 }
+
 // function gets form values
 function getInputValue(id) {
   return document.getElementById(id).value;
