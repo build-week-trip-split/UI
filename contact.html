@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trip Split</title>
+    <!-- <link rel="icon" href="./favicon.ico"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./components/NavBar.js" async></script>
+    <script src="./components/Features.js" async></script>
+  </head>
+
+  <body>
+    <div class="cont">
+      <div class="nav" id="navbar">
+        <a class="left-nav" href="index.html">Trip Split</a>
+        <div class="right-nav">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <h1 class="aim">We Like to hear from you</h1>
+      <div class="wrapper">
+        <div class="our-infor">
+          <h3>Our Contact-Information</h3>
+          <ul>
+            <li>Lambda School</li>
+            <li>4444*-444</li>
+            <li>email@email.com</li>
+          </ul>
+        </div>
+        <div class="ur-contact">
+          <h3>Email Us</h3>
+          <form id="contactform">
+            <p>
+              <label>First Name</label>
+              <input type="text" name="name" id="firstName" />
+            </p>
+            <p>
+              <label>Last Name</label>
+              <input type="text" name="name" id="lastName" />
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone number" id="phone" />
+            </p>
+            <p>
+              <label>Email</label>
+              <input type="text" name="email" id="email" />
+            </p>
+            <p>
+              <label>Message</label>
+              <textarea name="message" rows="5" id="testArea"></textarea>
+            </p>
+            <p>
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="copyright">
+          <div class="bulitBy">Built By Lambda Schools, USA</div>
+          <div id="copyright">
+            Copyright © 2019 Trip Split, Inc. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="contact.js"></script>
+  </body>
+</html>
