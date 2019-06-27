@@ -24,4 +24,4 @@ const featureSlides = () => {
 
 };
 
-// featureSlides();
+featureSlides();
