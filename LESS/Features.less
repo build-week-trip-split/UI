@@ -1,4 +1,5 @@
 .features {
+    color: white;
     background-color: @purp;
     padding-bottom: 5rem;
     margin-top: 5rem;
@@ -8,6 +9,7 @@
         font-size: 3rem;
         padding-top: 5rem;
         margin-bottom: 5rem;
+        text-decoration: underline;
     }
 
     .slide-container {
@@ -17,9 +19,63 @@
         position: relative;
         text-align: center;
         
+        .slides {
+
+            h3 {
+                font-size: 2.5rem;
+                margin-bottom: 3rem;
+            }
+
+            p {
+                margin-bottom: 3rem;
+
+                &:hover {
+                    color: @comp;
+                }
+            }
+
+            img {
+                height: auto;
+                max-height: 300px;
+                max-width: 100%;
+
+                border-radius: 1rem;
+                justify-content: center;
+                align-content: center;
+                margin-bottom: 5rem;
+            }
+
+            .venmo {
+                max-height: 175px;
+                max-width: 80%;
+                height: auto;
+            }
+
+            .img-adj {
+                max-height: 250px;
+            }
+        }
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        
+        @-webkit-keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+        
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+
+
         .dots-container{
             text-align: center;
-            margin-top: 30px;
 
             .dot {
                 height: 13px;
@@ -32,25 +88,8 @@
             }
 
             .active {
-                background-color: #FFFF5C;
+                background-color: @comp;
             }
         }
     }
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
 }

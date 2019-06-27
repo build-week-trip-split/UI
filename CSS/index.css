@@ -1,33 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-html,
-body {
-  font-family: "Ubuntu", sans-serif;
-  color: #110303;
-}
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-family: "Russo One", sans-serif;
-}
-h1 {
-  font-size: 3.5rem;
-}
-p {
-  font-size: 1.6rem;
-  line-height: 1.4;
-}
-@media (max-width:500px) {
-  max-width: 450px;
-  width: (max-width:500px);
-  margin: auto;
-}
 .container .landing {
   background: url(../assets/landing.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -56,23 +26,23 @@ p {
   font-size: 2rem;
 }
 .container .landing .header-display button {
-  background: #9858db;
+  background: #9858DB;
   color: white;
   margin-top: 3.5rem;
   padding: 1.5rem;
-  border-color: #9858db;
+  border-color: #9858DB;
   border-radius: 0.8rem;
   font-size: 2rem;
   font-family: Quicksand;
 }
 .container .landing .header-display button:hover {
   transition: 0.8s;
-  background-color: #ffff5c;
-  border-color: #ffff5c;
-  color: #9858db;
+  background-color: #FFFF5C;
+  border-color: #FFFF5C;
+  color: #9858DB;
 }
 .container .nav {
-  background-color: #9858db;
+  background-color: #9858DB;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -93,22 +63,22 @@ p {
   text-transform: uppercase;
   padding: 5px 20px;
   transition: 0.5s;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .container .nav a:hover {
-  color: #ffff5c;
+  color: #FFFF5C;
 }
 @media (max-width: 500px) {
-  .container .nav .right-nav a {
-    font-size: 1.4rem;
+  .container .nav a {
+    font-size: 1.18rem;
   }
 }
 .container .sticky {
   position: fixed;
-  z-index: 100;
   top: 0;
   bottom: auto;
   width: 100%;
+  z-index: 1;
 }
 .intro-container .intro {
   margin-left: 15%;
@@ -198,7 +168,8 @@ p {
   }
 }
 .features {
-  background-color: #9858db;
+  color: white;
+  background-color: #9858DB;
   padding-bottom: 5rem;
   margin-top: 5rem;
 }
@@ -207,6 +178,7 @@ p {
   font-size: 3rem;
   padding-top: 5rem;
   margin-bottom: 5rem;
+  text-decoration: underline;
 }
 .features .slide-container {
   font-size: 1.8rem;
@@ -215,23 +187,34 @@ p {
   position: relative;
   text-align: center;
 }
-.features .slide-container .dots-container {
-  text-align: center;
-  margin-top: 30px;
+.features .slide-container .slides h3 {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
 }
-.features .slide-container .dots-container .dot {
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: white;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+.features .slide-container .slides p {
+  margin-bottom: 3rem;
 }
-.features .slide-container .dots-container .active {
-  background-color: #FFFF5C;
+.features .slide-container .slides p:hover {
+  color: #FFFF5C;
 }
-.fade {
+.features .slide-container .slides img {
+  height: auto;
+  max-height: 300px;
+  max-width: 100%;
+  border-radius: 1rem;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 5rem;
+}
+.features .slide-container .slides .venmo {
+  max-height: 175px;
+  max-width: 80%;
+  height: auto;
+}
+.features .slide-container .slides .img-adj {
+  max-height: 250px;
+}
+.features .slide-container .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
@@ -252,6 +235,21 @@ p {
   to {
     opacity: 1;
   }
+}
+.features .slide-container .dots-container {
+  text-align: center;
+}
+.features .slide-container .dots-container .dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.features .slide-container .dots-container .active {
+  background-color: #FFFF5C;
 }
 .container .landing {
   background: url(../assets/landing.jpg) no-repeat center center fixed;
@@ -282,11 +280,11 @@ p {
   font-size: 2rem;
 }
 .container .landing .header-display button {
-  background: #9858db;
+  background: #9858DB;
   color: white;
   margin-top: 3.5rem;
   padding: 1.5rem;
-  border-color: #9858db;
+  border-color: #9858DB;
   border-radius: 0.8rem;
   font-size: 2rem;
   font-family: Quicksand;
@@ -298,10 +296,10 @@ p {
   transition: 0.8s;
   background-color: #FFFF5C;
   border-color: #FFFF5C;
-  color: #9858db;
+  color: #9858DB;
 }
 .container .nav {
-  background-color: #9858db;
+  background-color: #9858DB;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -355,7 +353,7 @@ p {
   margin-top: 5rem;
 }
 .about-section h1 {
-  color: #9858db;
+  color: #9858DB;
   text-align: center;
   padding-top: 3rem;
   font-weight: 700;
@@ -442,7 +440,7 @@ p {
 .about-section .about-us .about-us-text p {
   width: 100%;
   font-size: 1.8rem;
-  color: #9858db;
+  color: #9858DB;
   margin-top: 6rem;
   text-align: center;
   margin-right: 3rem;
@@ -459,7 +457,7 @@ p {
   }
 }
 footer {
-  color: #9858db;
+  color: #9858DB;
   font-size: 2rem;
   margin: auto;
   margin-top: 1rem;
@@ -599,7 +597,7 @@ table {
   border-spacing: 0;
 }
 .footer {
-  background-color: #9858db;
+  background-color: #9858DB;
   text-align: center;
   font-size: 1rem;
   padding: 8px;
@@ -621,39 +619,6 @@ table {
   font-weight: 700;
 }
 .missionStatement p {
-  font-size: 1.7rem;
-  font-weight: 700;
-}
-.features {
-  margin-top: 4%;
-  margin-bottom: 4%;
-}
-.features h1 {
-  font-size: 3.5rem;
-  margin-bottom: 2%;
-  font-weight: 700;
-}
-.features p {
-  font-size: 1.7rem;
-  font-weight: 700;
-}
-.features .feature p {
-  padding: 0 15px 15px 0;
-}
-.features .feature h3 {
-  font-size: 2.3rem;
-  font-weight: 700;
-}
-.whatItDoes {
-  margin-top: 4%;
-  margin-bottom: 4%;
-}
-.whatItDoes h1 {
-  font-size: 3.5rem;
-  margin-bottom: 2%;
-  font-weight: 700;
-}
-.whatItDoes p {
   font-size: 1.7rem;
   font-weight: 700;
 }
@@ -691,7 +656,6 @@ table {
   .container {
     width: 100%;
     max-width: 600px;
-    padding: 5px;
     margin: auto;
   }
   .container .missionStatement {
@@ -712,38 +676,6 @@ table {
     font-size: 3.5rem;
     font-weight: 700;
   }
-  .container .features {
-    margin-top: 4%;
-    margin-bottom: 4%;
-  }
-  .container .features h1 {
-    font-size: 3.5rem;
-    margin-bottom: 2%;
-    font-weight: 700;
-  }
-  .container .features p {
-    font-size: 1.7rem;
-    font-weight: 700;
-  }
-  .container .features h1 {
-    text-align: center;
-  }
-  .container .whatItDoes {
-    margin-top: 4%;
-    margin-bottom: 4%;
-  }
-  .container .whatItDoes h1 {
-    font-size: 3.5rem;
-    margin-bottom: 2%;
-    font-weight: 700;
-  }
-  .container .whatItDoes p {
-    font-size: 1.7rem;
-    font-weight: 700;
-  }
-  .container .whatItDoes h1 {
-    text-align: center;
-  }
   .container .custReview h1 {
     font-size: 3.5rem;
     margin-bottom: 30px;
@@ -759,20 +691,6 @@ table {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-  }
-  .container .feature {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
-  .container .feature h3 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-  }
-  .container .feature p {
-    text-align: center;
-    padding: 5px;
   }
   .container .imgg {
     align-content: center;
@@ -799,7 +717,7 @@ table {
     border-top: 1px grey solid;
     padding-top: 10px;
     border-bottom: 1px grey solid;
-    background-color: #9858db;
+    background-color: #9858DB;
   }
   .footer {
     text-align: center;
@@ -816,8 +734,8 @@ table {
   justify-content: center;
   font-size: 2rem;
   font-weight: 700;
-  background: #9858db;
-  color: #9858db;
+  background: #9858DB;
+  color: #9858DB;
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .meet-the-team .tabs {
@@ -842,7 +760,7 @@ table {
   margin-top: 3rem;
   font-size: 2rem;
   border-radius: 2rem;
-  color: #9858db;
+  color: #9858DB;
   padding: 0.5rem 2rem;
   margin: 3rem 2rem;
   cursor: pointer;
@@ -864,7 +782,7 @@ table {
   border: 1px solid #c7c3c3;
 }
 .card {
-  background: #9858db;
+  background: #9858DB;
   font-size: 2rem;
   text-align: center;
   display: flex;
@@ -926,9 +844,6 @@ table {
     margin-right: 0rem;
   }
 }
-* {
-  box-sizing: border-box;
-}
 .cont {
   max-width: 1024px;
   margin-left: auto;
@@ -943,21 +858,17 @@ h1 {
   text-align: center;
   font-size: 5rem;
   padding: 15px;
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .wrapper > * {
   padding: 1rem;
 }
 .our-infor {
-  background: #9858db;
+  background: #9858DB;
   text-align: center;
   font-size: 3rem;
   font-weight: 500px;
   margin: 0 0 1.5rem;
   padding: 10px;
-}
-.our-infor h3 {
-  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .ur-contact {
   box-shadow: 0 0 2px 0 rebeccapurple;
@@ -1010,7 +921,7 @@ h1 {
   outline: 0;
 }
 .nav {
-  background-color: #9858db;
+  background-color: #9858DB;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -1037,11 +948,6 @@ h1 {
 .nav a:hover {
   color: #ffff5c;
 }
-@media (max-width: 500px) {
-  .nav .right-nav a {
-    font-size: 1.4rem;
-  }
-}
 @media (max-width:500px) {
   .cont {
     max-width: 500px;
@@ -1057,21 +963,17 @@ h1 {
     text-align: center;
     font-size: 3.5rem;
     padding: 15px;
-    font-family: Georgia, "Times New Roman", Times, serif;
   }
   .wrapper > * {
     padding: 1rem;
   }
   .our-infor {
-    background: #9858db;
+    background: #9858DB;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 500px;
     margin: 0 0 1.5rem;
     padding: 10px;
-  }
-  .our-infor h3 {
-    font-family: cursive;
   }
   .ur-contact {
     box-shadow: 0 0 2px 0 rebeccapurple;
@@ -1084,7 +986,6 @@ h1 {
   .ur-contact h3 {
     font-size: 2rem;
     font-weight: 800;
-    font-style: italic;
   }
   .ur-contact form label input {
     width: 100%;
@@ -1124,38 +1025,18 @@ h1 {
     outline: 0;
   }
   .nav {
-    background-color: #9858db;
+    max-width: 500px;
+    background-color: #9858DB;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     height: 50px;
     position: sticky;
     bottom: 0;
     margin: auto;
-    width: 450px;
+    width: 100%;
     transition: height 1s;
-  }
-  .nav:hover {
-    height: 7.5rem;
-  }
-  .nav a {
-    float: left;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: 0.5s;
-    font-size: 1.3rem;
-    margin: auto;
-  }
-  .nav a:hover {
-    color: #ffff5c;
-  }
-}
-@media (max-width:500px) and (max-width: 500px) {
-  .nav .right-nav a {
-    font-size: 1.3rem;
   }
 }
 html {
