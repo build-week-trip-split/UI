@@ -953,6 +953,10 @@ h1 {
   font-size: 3rem;
   font-weight: 500px;
   margin: 0 0 1.5rem;
+  padding: 10px;
+}
+.our-infor h3 {
+  font-family: cursive;
 }
 .ur-contact {
   box-shadow: 0 0 2px 0 rebeccapurple;
@@ -964,6 +968,8 @@ h1 {
 }
 .ur-contact h3 {
   font-size: 3rem;
+  font-weight: 800;
+  font-style: italic;
 }
 .ur-contact form label input {
   width: 70%;
