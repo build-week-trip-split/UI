@@ -5,12 +5,15 @@ function submitForm(event) {
 
   //get values
   let firstName = getInputValue("firstName");
-  let lasttName = getInputValue("lastName");
+  let lastName = getInputValue("lastName");
   let phone = getInputValue("phone");
   let email = getInputValue("email");
   let message = getInputValue("testArea");
 
   console.log(firstName);
+  console.log(lastName);
+  console.log(email);
+  console.log(message);
   document.getElementById("contactform").reset();
 }
 
