@@ -41,6 +41,9 @@
   border-color: #FFFF5C;
   color: #9858DB;
 }
+.container .landing .header-display button:focus {
+  outline: 0;
+}
 .container .nav {
   background-color: #9858DB;
   display: flex;
