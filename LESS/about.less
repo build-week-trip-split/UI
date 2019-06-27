@@ -17,6 +17,12 @@
             align-items: center;
             justify-content: center;
             height: -webkit-fill-available;
+            margin: auto; 
+            margin-right: 0; 
+
+            // @media @mobile-pixel2 {
+            //     justify-co
+            // }
 
             img {
                 justify-content: center;
@@ -68,6 +74,7 @@
         @media @small-mobile {
             flex-direction: column; 
             padding-bottom: 1.5rem; 
+            width: 100%; 
         }
 
         &:hover {
@@ -91,13 +98,14 @@
 
         .right-nav a {
             @media @mobile {
-                font-size: 1.4rem;
+                font-size: 1.1rem;
+                display: flex; 
+                flex-direction: column; 
             }
         }
     }
 
     .sticky {
-        position: fixed;
         top: 0;
         bottom: auto;
         width: 100%;

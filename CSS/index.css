@@ -67,13 +67,8 @@ p {
 }
 .container .landing .header-display button:hover {
   transition: 0.8s;
-<<<<<<< HEAD
-  background-color: #FFFF5C;
-  border-color: #FFFF5C;
-=======
   background-color: #ffff5c;
   border-color: #ffff5c;
->>>>>>> origin/master
   color: #9858db;
 }
 .container .nav {
@@ -273,6 +268,8 @@ p {
   align-items: center;
   justify-content: center;
   height: -webkit-fill-available;
+  margin: auto;
+  margin-right: 0;
 }
 .container .landing .header-display img {
   justify-content: center;
@@ -318,6 +315,7 @@ p {
   .container .nav {
     flex-direction: column;
     padding-bottom: 1.5rem;
+    width: 100%;
   }
 }
 .container .nav:hover {
@@ -338,11 +336,12 @@ p {
 }
 @media (max-width: 500px) {
   .container .nav .right-nav a {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
   }
 }
 .container .sticky {
-  position: fixed;
   top: 0;
   bottom: auto;
   width: 100%;
@@ -852,6 +851,7 @@ table {
   color: #9858db;
   padding: 0.5rem 2rem;
   margin: 3rem 2rem;
+  cursor: pointer;
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .tabs .tab {
