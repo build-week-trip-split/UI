@@ -251,102 +251,6 @@
 .features .slide-container .dots-container .active {
   background-color: #FFFF5C;
 }
-.container .landing {
-  background: url(../assets/landing.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-height: 71rem;
-  width: 100%;
-}
-.container .landing .header-display {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: -webkit-fill-available;
-  margin: auto;
-  margin-right: 0;
-}
-.container .landing .header-display img {
-  justify-content: center;
-  border-radius: 8px;
-  margin-bottom: 3.5rem;
-}
-.container .landing .header-display h1 {
-  margin: 0;
-  color: white;
-  font-size: 2rem;
-}
-.container .landing .header-display button {
-  background: #9858DB;
-  color: white;
-  margin-top: 3.5rem;
-  padding: 1.5rem;
-  border-color: #9858DB;
-  border-radius: 0.8rem;
-  font-size: 2rem;
-  font-family: Quicksand;
-}
-.container .landing .header-display button:focus {
-  outline: 0;
-}
-.container .landing .header-display button:hover {
-  transition: 0.8s;
-  background-color: #FFFF5C;
-  border-color: #FFFF5C;
-  color: #9858DB;
-}
-.container .nav {
-  background-color: #9858DB;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
-  height: 60px;
-  position: sticky;
-  bottom: 0;
-  transition: height 1s;
-}
-@media (max-width: 460px) {
-  .container .nav {
-    flex-direction: column;
-    padding-bottom: 1.5rem;
-    width: 100%;
-  }
-}
-.container .nav:hover {
-  height: 7.5rem;
-}
-.container .nav a {
-  float: left;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 5px 20px;
-  transition: 0.5s;
-  font-size: 1.5rem;
-}
-.container .nav a:hover {
-  color: #FFFF5C;
-}
-@media (max-width: 500px) {
-  .container .nav .right-nav a {
-    font-size: 1.1rem;
-    display: flex;
-    flex-direction: column;
-  }
-}
-.container .sticky {
-  top: 0;
-  bottom: auto;
-  width: 100%;
-}
-.container .opacity {
-  opacity: 1;
-}
 .about-section {
   font-size: 5rem;
   background: white;
@@ -357,6 +261,7 @@
   text-align: center;
   padding-top: 3rem;
   font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
 }
 @media (min-width: 501px) and (max-width: 767px) {
   .about-section h1 {
@@ -377,7 +282,6 @@
   .about-section .about-us {
     flex-direction: column;
     align-items: center;
-    margin-top: -20rem;
   }
 }
 .about-section .about-us .about-us-pic {
@@ -399,19 +303,11 @@
   }
 }
 .about-section .about-us .about-us-pic img {
-  border-radius: 100rem;
   width: 100%;
   height: auto;
   max-width: 360px;
   min-width: 360px;
-  margin-bottom: -20rem;
-  margin-top: -20rem;
-}
-@media (min-width: 501px) and (max-width: 767px) {
-  .about-section .about-us .about-us-pic img {
-    margin-bottom: -20rem;
-    margin-top: -20rem;
-  }
+  margin-top: 3rem;
 }
 @media (max-width: 500px) {
   .about-section .about-us .about-us-pic img {
@@ -461,7 +357,6 @@
 }
 @media (max-width: 500px) {
   .about-section .about-us .about-us-text p {
-    margin-top: -20rem;
     margin-right: 0;
   }
 }
@@ -735,7 +630,10 @@ table {
     background-color: white;
   }
 }
-.tabs {
+.meet-the-team {
+  margin-top: 5rem;
+}
+.meet-the-team .tabs {
   display: flex;
   justify-content: center;
   font-size: 2rem;
@@ -744,7 +642,7 @@ table {
   color: #9858DB;
 }
 @media (min-width: 501px) and (max-width: 767px) {
-  .tabs {
+  .meet-the-team .tabs {
     margin-top: 5rem;
     flex-direction: column;
     text-align: center;
@@ -752,14 +650,14 @@ table {
   }
 }
 @media (max-width: 500px) {
-  .tabs {
+  .meet-the-team .tabs {
     margin-top: 5rem;
     flex-direction: column;
     text-align: center;
     align-items: center;
   }
 }
-.tabs .tab {
+.meet-the-team .tabs .tab {
   background: white;
   border: 1px solid white;
   text-decoration: none;
@@ -772,18 +670,18 @@ table {
   cursor: pointer;
 }
 @media (min-width: 501px) and (max-width: 767px) {
-  .tabs .tab {
+  .meet-the-team .tabs .tab {
     width: 45%;
     margin-bottom: 0;
   }
 }
 @media (max-width: 500px) {
-  .tabs .tab {
+  .meet-the-team .tabs .tab {
     width: 45%;
     margin-bottom: 0;
   }
 }
-.tabs .tab:hover {
+.meet-the-team .tabs .tab:hover {
   background: #c7c3c3;
   border: 1px solid #c7c3c3;
 }
@@ -808,9 +706,9 @@ table {
 }
 .card img {
   border-radius: 100rem;
-  width: 50%;
-  max-width: 360px;
-  max-height: 360px;
+  width: 40%;
+  max-width: 320px;
+  max-height: 320px;
   margin: auto;
 }
 .card .about-team {
