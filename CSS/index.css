@@ -1126,13 +1126,13 @@ h1 {
     background-color: #9858db;
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    height: 60px;
+    height: 50px;
     position: sticky;
     bottom: 0;
     margin: auto;
-    width: 500px;
+    width: 450px;
     transition: height 1s;
   }
   .nav:hover {
@@ -1144,9 +1144,9 @@ h1 {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    padding: 5px 20px;
     transition: 0.5s;
     font-size: 1.3rem;
+    margin: auto;
   }
   .nav a:hover {
     color: #ffff5c;
