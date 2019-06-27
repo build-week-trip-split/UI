@@ -1,7 +1,14 @@
+// .container {
+//   margin: 0 auto 0 auto;
+//   max-width: @full-width;
+//   width: 100%;
+// }
 .section-container {
-  width: 100%;
-  padding: 5px;
+  margin-left: 15%;
+  margin-right: 15%;
+  max-width: @full-width;
   margin: auto;
+  width: 100%;
 }
 
 .missionStatement {
@@ -9,8 +16,9 @@
 }
 
 .custReview h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   margin-bottom: 2%;
+  font-weight: 700;
 }
 
 .cr {
@@ -21,6 +29,7 @@
 
 .imgg {
   margin-right: 5%;
+  padding-bottom: 10px;
 }
 
 .imgg img {
@@ -28,66 +37,87 @@
 }
 .imgg p {
   text-align: center;
-  font-size: 1.3rem;
+
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 .cr .review {
   display: flex;
 }
 .review {
   margin: 50px 0 50px 0;
-  font-size: 1.2rem;
+
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 @media @phone {
-  .missionStatement {
-    .style();
-    h1 {
-      text-align: center;
-    }
-  }
-  .custReview h1 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  .section-container {
+  .container {
     width: 100%;
-    max-width: 450px;
-    padding: 5px;
+    max-width: 600px;
     margin: auto;
-  }
-  .cr {
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
 
-  .imgg {
-    align-content: center;
-    margin: auto;
-  }
+    .missionStatement {
+      .style();
+      h1 {
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 700;
+      }
+    }
 
-  .imgg img {
-    border-radius: 70px;
-  }
-  .imgg p {
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  .cr .review {
-    display: flex;
-  }
-  .review {
-    margin: 10px 0 30px 0;
-    text-align: center;
-    p {
-      font-size: 1.2rem;
+    .custReview h1 {
+      font-size: 3.5rem;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 700;
+    }
+    .section-container {
+      width: 100%;
+      max-width: 500px;
+
+      margin: auto;
+    }
+    .cr {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+
+    .imgg {
+      align-content: center;
+      margin: auto;
+    }
+
+    .imgg img {
+      border-radius: 70px;
+    }
+    .imgg p {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .cr .review {
+      display: flex;
+    }
+    .review {
+      margin: 10px 0 30px 0;
+      text-align: center;
+      p {
+        font-size: 1.2rem;
+      }
+    }
+    .custReview {
+      border-top: 1px grey solid;
+      padding-top: 10px;
+      border-bottom: 1px grey solid;
+      background-color: @purp;
     }
   }
-  .custReview {
-    border-top: 1px grey solid;
-    padding-top: 10px;
-    border-bottom: 1px grey solid;
-    background-color: rgb(43, 247, 179);
+
+  .footer {
+    text-align: center;
+    font-size: 1rem;
+    padding: 8px;
+    background-color: white;
   }
 }
