@@ -1031,6 +1031,7 @@ h1 {
     outline: 0;
   }
   .nav {
+    max-width: 500px;
     background-color: #9858DB;
     display: flex;
     justify-content: space-evenly;
@@ -1040,6 +1041,7 @@ h1 {
     position: sticky;
     bottom: 0;
     margin: auto;
+    width: 100%;
     transition: height 1s;
   }
 }
